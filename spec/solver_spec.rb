@@ -11,7 +11,10 @@ describe Solver do
         num = -2
         expect { @solver.factorial(num).to raise_error('no Negative number')}
     end
-
+    it 'return the factorial of the positive number passed in' do
+        number = 3
+        expect(@solver.factorial(number)).to eq 6
+    end
 
   end
 
