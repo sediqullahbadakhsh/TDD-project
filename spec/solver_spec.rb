@@ -24,4 +24,10 @@ describe Solver do
         expect(@solver.reverse(string)).to eq 'tnemetats'
     end
   end
+
+  describe 'fizzbuzz' do
+    it 'return fizzbuzz if it is divisible by 3 & 5' do
+      expect(@solver.fizzbuzz(15)).to eq 'fizzbuzz'
+    end
+  end
 end
