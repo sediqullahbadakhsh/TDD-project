@@ -20,6 +20,5 @@ class Solver
     return 'buzz'
     if mod5.zero?
     num.to_s
-    end
   end
 end
