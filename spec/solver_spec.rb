@@ -13,7 +13,7 @@ describe Solver do
 
     it 'return the factorial of the positive number passed in' do
       number = 3
-      expect(@solver.factorial(number)).to eq('6')
+      expect(@solver.factorial(number)).to eq '6'
     end
   end
 
