@@ -15,9 +15,8 @@ class Solver
     mod5 = num % 5
     return 'fizzbuzz'
     if mod3.zero? && mod5.zero?
-    return 'fizz'
-    if mod3.zero?
-    return 'buzz'
-    if mod5.zero?
+    return 'fizz' if mod3.zero?
+    return 'buzz' if mod5.zero?
     return num.to_s
   end
+end
