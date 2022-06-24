@@ -19,6 +19,6 @@ class Solver
     if mod3.zero?
     return 'buzz'
     if mod5.zero?
-    num.to_s
+    return num.to_s
   end
 end
