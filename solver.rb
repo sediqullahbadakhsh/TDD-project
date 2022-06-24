@@ -21,4 +21,3 @@ class Solver
     if mod5.zero?
     return num.to_s
   end
-end
