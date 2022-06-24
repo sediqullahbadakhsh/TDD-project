@@ -3,7 +3,7 @@ class Solver
     def factorial(num)
        raise 'no Negative number' if num.negative?
        return 1 if [1, 0].include?(num)
-       factorial(num -1)
+       factorial(num -1) * num
     end
 
     def reverse(string)
