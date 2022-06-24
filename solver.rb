@@ -16,7 +16,6 @@ class Solver
     return 'fizzbuzz' if mod3.zero? && mod5.zero?
     return 'fizz' if mod3.zero?
     return 'buzz' if mod5.zero?
-
     return number.to_s
   end
 end
