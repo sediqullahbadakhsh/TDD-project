@@ -33,5 +33,9 @@ describe Solver do
     it 'return fizz if it is divisible by 3' do
       expect(@solver.fizzbuzz(9)).to eq 'fizz'
     end
+
+    it 'return buzz if it is divisible by 5' do
+      expect(@solver.fizzbuzz(10)).to eq 'buzz'
+    end
   end
 end
