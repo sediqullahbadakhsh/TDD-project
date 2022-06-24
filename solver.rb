@@ -1,7 +1,7 @@
 class Solver
-        
+       
     def factorial(num)
-       raise 'no Negative number' if num
+       raise 'no Negative number' if num.negative?
        return 1 if [1, 0].include?(num)
        factorial(num -1)
     end
@@ -20,10 +20,10 @@ class Solver
     end
 
 end
-fact = Solver.new
-puts fact.factorial(2)
-reverse = Solver.new
-puts reverse.reverse('num')
-fizbuzz = Solver.new
-puts fizbuzz.fizzbuzz(2)
+# fact = Solver.new
+# puts fact.factorial(2)
+# reverse = Solver.new
+# puts reverse.reverse('num')
+# fizbuzz = Solver.new
+# puts fizbuzz.fizzbuzz(2)
 
