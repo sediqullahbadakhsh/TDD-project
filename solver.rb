@@ -13,10 +13,9 @@ class Solver
     def fizzbuzz(num)
         mod3 = num % 3
         mod5 = num % 5
-        return 'fizzbuzz' if mod3 && mod5
-        return 'fizz' if mod3
-        return 'buzz' if mod5
+        return 'fizzbuzz' if mod3.zero? && mod5.zero?
+        return 'fizz' if mod3.zero?
+        return 'buzz' if mod5.zero?
         return num.to_s
     end
-
 end
