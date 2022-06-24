@@ -10,16 +10,13 @@ class Solver
     string.reverse
   end
 
-  def fizzbuzz(num)
-    mod3 = num % 3
-    mod5 = num % 5
-    return 'fizzbuzz'
-    if mod3.zero? && mod5.zero?
-    return 'fizz'
-    if mod3.zero?
-    return 'buzz'
-    if mod5.zero?
-    return num.to_s
-    end
+  def fizzbuzz(number)
+    mod3 = number % 3
+    mod5 = number % 5
+    return 'fizzbuzz' if mod3.zero? && mod5.zero?
+    return 'fizz' if mod3.zero?
+    return 'buzz' if mod5.zero?
+
+    return number.to_s
   end
 end
